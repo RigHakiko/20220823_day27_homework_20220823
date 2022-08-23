@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coding.mapper.ProMapper">
+    <select id="selectDynamic" resultType="com.coding.model.Pro">
+        select pro_id as id, pro_name as name, pro_age as age, pro_score as score, pro_class as classNo
+        from pro
+        <where>
+            <if test="id != null and id&gt;0">
+                and pro_id = #{id}
+            </if>
+            <if test="name != null and name != ''">
+                and pro_name like concat('%', #{name} , '%')
+            </if>
+            <if test="age != null and age &gt; 0">
+                and pro_age > #{age}
+            </if>
+            <if test="score != null and score&gt;=0">
+                and pro_score > #{score}
+            </if>
+            <if test="classNo != null and classNo &gt;0">
+                and pro_class = #{classNo}
+            </if>
+        </where>
+    </select>
+</mapper>
