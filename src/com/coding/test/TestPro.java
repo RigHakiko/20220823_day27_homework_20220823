@@ -76,7 +76,6 @@ public class TestPro {
                 break;
                 case 6: {
                     int age = 30;
-                    pro = new Pro();
                     pro.setAge(age);
                     pros = proMapper.selectDynamic(pro);
                     System.out.println(pros);
@@ -94,4 +93,6 @@ public class TestPro {
 
 
     }
+
+
 }
