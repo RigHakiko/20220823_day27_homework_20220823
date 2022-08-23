@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6be49a20-0021-4dda-a74a-d58d3be15da4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mybatis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/asm-3.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/cglib-2.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-dbcp-1.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-logging-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javassist-3.17.1-GA.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-4.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/log4j-api-2.0-rc1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/log4j-core-2.0-rc1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mybatis-3.2.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-5.0.6-bin.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-1.7.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/slf4j-log4j12-1.7.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/coding/mapper/ProMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/coding/mapper/ProMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/coding/model/Pro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/coding/test/TestPro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day27_homework_20220823.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day27_homework_20220823.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/coding/test/TestPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coding/test/TestPro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,11 +79,23 @@
       <option name="presentableId" value="Default" />
       <updated>1661237866754</updated>
       <workItem from="1661237868193" duration="2189000" />
-      <workItem from="1661240103759" duration="5060000" />
+      <workItem from="1661240103759" duration="5450000" />
     </task>
+    <task id="LOCAL-00001" summary="终于完成了day27的作业, 没有bug了, 改了好久">
+      <created>1661247670654</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661247670654</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="终于完成了day27的作业, 没有bug了, 改了好久" />
+    <option name="LAST_COMMIT_MESSAGE" value="终于完成了day27的作业, 没有bug了, 改了好久" />
   </component>
 </project>

@@ -23,28 +23,28 @@ public class TestPro {
         List<Pro> pros = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
-        Pro pro = null;
 
 
-        while (true) {
+        circle:while (true) {
+            Pro pro = new Pro();
+
             System.out.println("\t1.查询所有人的个人信息\n" +
                     "\t2.查询姓名中带有\"明\"字的人，其个人信息\n" +
                     "\t3.查询编号为1002的人，其个人信息\n" +
                     "\t4.查询成绩大于85分的人，其个人信息\n" +
                     "\t5.查询班级为1的人，其个人信息\n" +
-                    "\t6.查询年龄大于等于30，其个人信息\n");
+                    "\t6.查询年龄大于等于30，其个人信息\n " +
+                    "  7退出");
 
 
             switch (scanner.nextInt()) {
                 case 1: {
-                    pro = new Pro();
                     pros = proMapper.selectDynamic(pro);
                     System.out.println(pros);
                 }
                 break;
                 case 2: {
                     String likeName = "明";
-                    pro = new Pro();
                     pro.setName(likeName);
                     pros = proMapper.selectDynamic(pro);
                     System.out.println(pros);
@@ -53,7 +53,6 @@ public class TestPro {
                 }
                 break;
                 case 3: {
-                    pro = new Pro();
                     pro.setId(1002);
                     pros = proMapper.selectDynamic(pro);
                     System.out.println(pros);
@@ -62,7 +61,6 @@ public class TestPro {
                 break;
                 case 4: {
                     Double greatThanScore = 85.0;
-                    pro = new Pro();
                     pro.setScore(greatThanScore);
                     pros = proMapper.selectDynamic(pro);
                     System.out.println(pros);
@@ -71,7 +69,6 @@ public class TestPro {
                 break;
                 case 5: {
                     int classNo = 1;
-                    pro = new Pro();
                     pro.setClassNo(classNo);
                     pros = proMapper.selectDynamic(pro);
                     System.out.println(pros);
@@ -86,8 +83,12 @@ public class TestPro {
 
                 }
                 break;
+                case 7:{
+                    System.out.println("退出");
+                    break circle;
+                }
                 default:
-                    System.out.println("输入不是1到6之间的整数, 退出");
+                    System.out.println("输入不是1到7之间的整数, 退出");
             }
         }
 
